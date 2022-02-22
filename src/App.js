@@ -43,14 +43,14 @@ function App() {
           onInput={(e) => setTopic(e.target.value)}
           value={topic}
           id="new-topic"
-          className="px-4 py-1 border border-gray-400 rounded-l-full ml-4 outline-none"
+          className="px-4 py-1 border border-gray-400 rounded-l-full ml-4 outline-none w-32"
         />
         <button className="rounded-r-full bg-blue-700 px-4 py-1 text-white border border-blue-700 hover:bg-opacity-80">
           Search
         </button>
       </form>
 
-      <div className="w-96">
+      <div className="w-72">
         {Object.entries(countingList).map(([key, value]) => (
           <div
             key={key}
