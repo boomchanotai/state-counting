@@ -36,18 +36,25 @@ function App() {
     <div className="min-h-screen flex flex-col justify-start items-center p-8">
       <h1 className="text-2xl font-semibold">State Counting</h1>
       <form className="my-4" onSubmit={handleNewTopic}>
-        <label htmlFor="new-topic">New Topic :</label>
-        <input
-          type="text"
-          placeholder="New Topic"
-          onInput={(e) => setTopic(e.target.value)}
-          value={topic}
-          id="new-topic"
-          className="px-4 py-1 border border-gray-400 rounded-l-full ml-4 outline-none w-32"
-        />
-        <button className="rounded-r-full bg-blue-700 px-4 py-1 text-white border border-blue-700 hover:bg-opacity-80">
-          Search
-        </button>
+        <label
+          htmlFor="new-topic"
+          className="text-gray-400 text-sm font-semibold"
+        >
+          New Topic
+        </label>
+        <div>
+          <input
+            type="text"
+            placeholder="New Topic"
+            onInput={(e) => setTopic(e.target.value)}
+            value={topic}
+            id="new-topic"
+            className="px-4 py-1 border border-gray-400 rounded-l-lg outline-none w-48"
+          />
+          <button className="rounded-r-lg bg-blue-700 px-4 py-1 text-white border border-blue-700 hover:bg-opacity-80">
+            Search
+          </button>
+        </div>
       </form>
 
       <div className="w-72">
